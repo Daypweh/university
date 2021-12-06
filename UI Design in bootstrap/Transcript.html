@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="trial.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+<nav>
+<ul>
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <img src="pro.jpg" alt="Italian Trulli">
+    <p class="user">Username</p>
+    <li class="active"><a href="Home.html"> Home Page</a></li>
+    <li><a href="School Form.html">                  School Info</a></li>
+    <li><a href="Faculty.html">                 Faculty Info</a></li>
+    <li><a href="Student page.html">        Student Info</a></li>
+    <li><a href="Transcript.html">         Student Transcript</a></li>
+    <li><a href="#Assignment">              Assignment</a></li>
+    <li><a href="Curriculum.html">              Curriculum</a></li>
+ </ul>
+
+ <div id="main">
+    <span class="line" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    
+    
+    
+    <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    
+    
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+    }
+    </script>
+
+
+    <h1>Student Transcript</h1>
+
+    <form action="/action_page.php">
+        <label for="St ID">Student ID:</label><br>
+        <input type="St ID" id="fname" name="fname"><br><br>
+        <label for="Course">Course ID:</label><br>
+        <input type="Department" id="lname" name="lname"><br><br>
+    </form>
+<div class="grade">
+    <form action="/action_page.php">
+        <label for="cars">Grade:</label>
+        <select class="gra" name="cars" id="cars">
+            <option value="A">Grade</option>
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+          <option value="F">F</option>
+        </select>
+        <br>
+</div>
+
+<div class="credit">
+    <form action="/action_page.php">
+        <label for="cars">Credit Hours Earned:</label>
+        <select class="hrs" name="cars" id="cars">
+            <option value="1">C.Hours</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+        </select>
+            <br>
+</div>
+
+<div class="calendar">
+            <form action="/action_page.php">
+                <label for="birthday">Date Completed:</label>
+                <input class="cln" type="date" id="birthday" name="birthday">
+                <input class="sub" type="submit">
+              </form>
+</div>
+</nav>
+    </body>
+
+    </html>

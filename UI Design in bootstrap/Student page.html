@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="trial.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+<nav>
+<ul>
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <img src="pro.jpg" alt="Italian Trulli">
+    <p class="user">Username</p>
+    <li class="active"><a href="Home.html"> Home Page</a></li>
+    <li><a href="School Form.html">                  School Info</a></li>
+    <li><a href="Faculty.html" >                Faculty Info</a></li>
+    <li><a href="Student page.html">        Student Info</a></li>
+    <li><a href="Transcript.html">          Student Transcript</a></li>
+    <li><a href="#Assignment">              Assignment</a></li>
+    <li><a href="Curriculum.html">              Curriculum</a></li>
+ </ul>
+
+ <div id="main">
+    <span class="line" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    
+    
+    
+    <script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+    
+    
+    
+    function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+    }
+    </script>
+    
+    <h1>Student Information</h1>
+    <br>
+    <br>
+    <form action="/action_page.php">
+        <label for="St ID">Student ID:</label><br>
+        <input type="St ID" id="fname" name="fname"><br><br>
+        
+        <label for="Department">Department ID:</label><br>
+        <input type="Department" id="lname" name="lname"><br><br>
+        
+        <label for="fname">Student's first name:</label><br>
+        <input type="fname" id="lname" name="lname"><br><br>
+        
+        <label for="mname">Student's middle name:</label><br>
+        <input type="mname" id="lname" name="lname"><br><br>
+        
+        <label for="lname">Student's last name:</label><br>
+        <input type="lname" id="lname" name="lname"><br><br>
+        
+        <label for="num">Student's Phone Number:</label><br>
+        <input type="num" id="lname" name="lname"><br><br>
+    <div class="move">
+        <label for="str">Student's Street Address:</label><br>
+        <input type="str" id="lname" name="lname"><br><br>
+        
+        <label for="city">Student's City:</label><br>
+        <input type="city" id="lname" name="lname"><br><br>
+        
+        <label for="zip">Student's Zip Code:</label><br>
+        <input type="zip" id="lname" name="lname"><br><br>
+    </div>  
+    <div class="submit">
+        <input type="submit" value="Submit">
+    </div>
+    </form>
+</nav>
+    </body>
+
+    </html>

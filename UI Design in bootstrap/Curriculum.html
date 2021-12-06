@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="trial.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+<nav>
+<ul>
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+    <img src="pro.jpg" alt="Italian Trulli">
+    <p class="user">Username</p>
+    <li class="active"><a href="Home.html"> Home Page</a></li>
+    <li><a href="School Form.html">                  School Info</a></li>
+    <li><a href="Faculty.html">                 Faculty Info</a></li>
+    <li><a href="Student page.html">        Student Page</a></li>
+    <li><a href="Transcript.html">          Student Transcript</a></li>
+    <li><a href="#Assignment">              Assignment</a></li>
+    <li><a href="Curriculum.html">         Curriculum</a></li>
+ </ul>
+
+ 
+
+
+<div id="main">
+<span class="line" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+
+
+
+<script>
+function openNav() {
+document.getElementById("mySidenav").style.width = "250px";
+document.getElementById("main").style.marginLeft = "250px";
+document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+
+
+function closeNav() {
+document.getElementById("mySidenav").style.width = "0";
+document.getElementById("main").style.marginLeft= "0";
+document.body.style.backgroundColor = "white";
+}
+</script>
+
+<h1>Curriculum</h1>
+    <br>
+    <br>
+    <form action="/action_page.php">
+        <label for="Cc ID">Curriculum ID:</label><br>
+        <input type="Cc ID" id="fname" name="fname"><br><br>
+        
+        <label for="Course Name">Course Name:</label><br>
+        <input type="Course Name" id="lname" name="lname"><br><br>
+        
+        <label for="Cc Description">Curriculum Description:</label><br>
+        <input type="Cc Description" id="lname" name="lname"><br><br>
+        
+        <label for="Cc name">Curriculum Name:</label><br>
+        <input type="Cc name" id="lname" name="lname"><br><br>
+        
+        <label for="Cc Course Info">Curriculum Course Information:</label><br>
+        <input type="Cc Course Info" id="lname" name="lname"><br><br>
+        
+        <label for="Job rlts">Job Relationship:</label><br>
+        <input type="Job rlts" id="lname" name="lname"><br><br>
+   
+        <label for="opt">Opt Mandatory Flag:</label><br>
+        <input type="opt" id="lname" name="lname"><br><br>
+        
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</nav>
+</body>
+
+</html>
